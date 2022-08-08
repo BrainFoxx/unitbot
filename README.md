@@ -1,6 +1,7 @@
 # UnitBot
 
 pip install telethon
+
 pip install configparser
 
 # How to take your api and hash id 
