@@ -12,5 +12,5 @@ Tap to api development tools
 
 Give a random name, short name and platform "web" (don`t forget for description)
 
-now, you are take your api and hash.
+now, you can take your api and hash.
 <img src='https://i.imgur.com/tKg4PQR.png'/>
