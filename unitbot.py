@@ -55,11 +55,13 @@ with TelegramClient("foxx", api_id, api_hash) as client:
         randomizee = random.randint(0, get_count)
         await event.edit(str(randomizee))
 
+    """
     @client.on(events.ChatAction())
     async def joiiner(event):
         if event.user_joined:
-            await event.respond(f'{event.user.first_name}, чей Крым?')
-
+            await event.respond(f'{event.user.first_name}, welcum')
+    """
+    
     """
     @client.on(events.NewMessage(pattern=";mag(?: |$)(.*)", outgoing=True))
     async def magic(event):
