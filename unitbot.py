@@ -12,7 +12,7 @@ idd = 0
 with TelegramClient(
     "foxx", config["Api"]["api_id"], config["Api"]["api_hash"]
 ) as client:
-    get_mine = client.get_me()
+    
 
     @client.on(events.NewMessage(pattern=";chats", outgoing=True))
     async def chatss(event):
