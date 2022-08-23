@@ -27,7 +27,7 @@ with TelegramClient(
 
     @client.on(events.NewMessage(pattern=";repeater (\w+)", outgoing=True))
     async def set_id(event):
-        # await event.respond('Чтобы узнать все id пиши ;chats')
+        # await event.respond('Чтобы узнать все id пиши: ;chats')
         global idd
         idd = event.pattern_match.group(1)
         await event.edit(f"Ты выбрал {idd}")
@@ -86,4 +86,5 @@ with TelegramClient(
     #         dict = dict + i
     #         time.sleep(0.553)
 
+    
     client.run_until_disconnected()
